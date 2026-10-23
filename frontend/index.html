@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteka</title>
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteka</h1>
+
+        <p>
+            Przykładowa aplikacja rozwijana podczas laboratoriów.
+        </p>
+
+        <nav>
+            <a href="#about">O bibliotece</a>
+            <a href="#books">Książki</a>
+            <a href="#rules">Jak wypożyczyć?</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about">
+            <h2>O bibliotece</h2>
+
+            <p>
+                Witaj w przykładowej Bibliotece.
+                W kolejnych laboratoriach ta prosta strona zostanie
+                rozbudowana do aplikacji działającej w Django.
+            </p>
+
+            <p>
+                Docelowo użytkownik będzie mógł przeglądać książki,
+                wyświetlać ich szczegóły oraz wykonywać podstawowe
+                operacje związane z wypożyczeniami.
+            </p>
+
+            <img
+                src=data:image/png;base64,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
+                alt="Ikona książki"
+                width="120"
+            >
+        </section>
+
+        <section id="books">
+            <h2>Polecane książki</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tytuł</th>
+                        <th>Autor</th>
+                        <th>Rok</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Solaris</td>
+                        <td>Stanisław Lem</td>
+                        <td>1961</td>
+                    </tr>
+                    <tr>
+                        <td>Lalka</td>
+                        <td>Bolesław Prus</td>
+                        <td>1890</td>
+                    </tr>
+                    <tr>
+                        <td>Hobbit</td>
+                        <td>J.R.R. Tolkien</td>
+                        <td>1937</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mały Książę</td>
+                        <td>Antoine de Saint-Exupéry</td>
+                        <td>1943</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article>
+                <h3>Solaris</h3>
+
+                <div class="book-info">
+                    <p>
+                        <strong>Autor:</strong> Stanisław Lem
+                    </p>
+
+                    <p>
+                        <strong>Rok wydania:</strong> 1961
+                    </p>
+                </div>
+
+                <p>
+                    Powieść science fiction opowiadająca o próbie
+                    kontaktu człowieka z obcą formą inteligencji.
+                </p>
+            </article>
+
+            <article>
+                <h3>Lalka</h3>
+
+                <p>
+                    <strong>Autor:</strong> Bolesław Prus
+                </p>
+
+                <p>
+                    Powieść przedstawiająca historię Stanisława
+                    Wokulskiego oraz społeczeństwo XIX-wiecznej Warszawy.
+                </p>
+            </article>
+
+            <article>
+                <h3>Hobbit</h3>
+
+                <p>
+                    <strong>Autor:</strong> J.R.R. Tolkien
+                </p>
+
+                <p>
+                    Historia wyprawy Bilba Bagginsa, który opuszcza
+                    spokojny dom i wyrusza w niebezpieczną podróż.
+                </p>
+            </article>
+            <article>
+                <h3>Mały Książę</h3>
+
+                <div class="book-info">
+                    <p>
+                        <strong>Autor:</strong> Antoine de Saint-Exupéry
+                    </p>
+
+                    <p>
+                        <strong>Rok wydania:</strong> 1943
+                    </p>
+                </div>
+
+                <p>
+                    Opowieść o podróży Małego Księcia i jego spotkaniach
+                    z mieszkańcami różnych planet.
+                </p>
+            </article>
+        </section>
+
+        <section id="rules">
+            <h2>Jak wypożyczyć książkę?</h2>
+
+            <ol>
+                <li>Znajdź interesującą Cię książkę.</li>
+                <li>Sprawdź, czy jest dostępna.</li>
+                <li>Zaloguj się do aplikacji.</li>
+                <li>Wybierz opcję wypożyczenia.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Planowane funkcje</h2>
+
+            <ul>
+                <li>lista książek,</li>
+                <li>szczegóły książki,</li>
+                <li>autorzy,</li>
+                <li>dodawanie i edycja danych,</li>
+                <li>logowanie użytkowników,</li>
+                <li>wypożyczenia.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Projekt ćwiczeniowy — Projektowanie aplikacji webowych
+        </p>
+    </footer>
+
+</body>
+</html>
