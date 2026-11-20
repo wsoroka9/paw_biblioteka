@@ -15,3 +15,6 @@ Thumbs.db
 
 # Dane lokalne / poufne
 .env
+
+# Lokalna baza danych
+db.sqlite3
